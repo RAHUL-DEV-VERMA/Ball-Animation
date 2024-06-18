@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To & fro motion ball effect</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 550px;
+    width: 1300px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+
+    animation: animationball;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes animationball{
+    10%{
+        transform: translateY(450px) translateX(150px);
+    }
+    20%{
+        transform: translateY(0px) translateX(300px);
+    }
+    30%{
+        transform: translateY(450px) translateX(450px);
+    }
+    40%{
+        transform: translateY(0px) translateX(600px);
+    }
+    50%{
+        transform: translateY(450px) translateX(750px);
+    }
+    60%{
+        transform: translateY(0px) translateX(900px);
+    }
+    70%{
+        transform: translateY(450px) translateX(1050px);
+    }
+    80%{
+        transform: translateY(0px) translateX(1200px);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
